@@ -9,6 +9,7 @@ DataBase-MYSQL
 - create a schema in mysql ( can use Mysql Workbench) with name ecomm
 - no need to create tables, it will be created automatically with models , 
 - default some products are added in products table using CommandLineRunner (in Main)
+- ddl-auto = create-drop in application.properties will drop tables evertime we rerun
 
 
 **APIS**
