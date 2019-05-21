@@ -11,8 +11,8 @@ DataBase-MYSQL
 - default some products are added in products table using CommandLineRunner (in Main)
 
 
-APIS
-1 GET All products in DB
+*APIS*
+**GET All products in DB**
 - GET :http://localhost:8085/products/all
 
 ```json
