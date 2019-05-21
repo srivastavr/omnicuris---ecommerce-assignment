@@ -11,7 +11,7 @@ DataBase-MYSQL
 - default some products are added in products table using CommandLineRunner (in Main)
 
 
-*APIS*
+**APIS**
 **GET All products in DB**
 - GET :http://localhost:8085/products/all
 
@@ -46,12 +46,11 @@ resp :
 ]
 
 ```
-2 ----> Order a Product 
-
-POST http://localhost:8085/createorder?username=hello
-
-POST BODy : 
+**Order a Product**
+- POST http://localhost:8085/createorder?username=hello
 ```json
+POST :
+Body : 
 	[ 
 		{
 			"productid":4565,
@@ -92,9 +91,9 @@ POST BODy :
 }
 ```
 ===============================================================================================================================
-3 ----> get successfully odered products on user wise
+**get successfully odered products on user wise**
 
-GET : http://localhost:8085/getallorders?username=hello
+- GET : http://localhost:8085/getallorders?username=hello
 ```json
 [
     {
@@ -113,9 +112,9 @@ GET : http://localhost:8085/getallorders?username=hello
 ]
 ```
 ===============================================================================================================================
-4 -----> Add new Products
+**Add new Products**
 
-POST : http://localhost:8085/product/add
+- POST : http://localhost:8085/product/add
 ```json
 BODY :
 [
@@ -134,8 +133,8 @@ resp :
 ]
 ```
 ===============================================================================================================================
-5 -----> Update a product already in db (Quantity will be added to currently available quantity & Name will be updated with new)
-POST http://localhost:8085/product/update/1
+**Update a product already in db (Quantity will be added to currently available quantity & Name will be updated with new)**
+- POST http://localhost:8085/product/update/1
 ```json
 BODY :
  {
@@ -150,8 +149,8 @@ resp :
 }
 ```
 ===============================================================================================================================
- 6 --> Delete a product in product table
- DELETE http://localhost:8085/product/delete/1
+**Delete a product in product table**
+ - DELETE http://localhost:8085/product/delete/1
  ```json
  resp :
 {
@@ -164,8 +163,8 @@ resp :
 }
 ```
 =================================================================================================================================
-7 ----> Get all Orders of all Users (each order separetly)
-GET http://localhost:8085/orders/all
+**Get all Orders of all Users (each order separetly)**
+- GET http://localhost:8085/orders/all
 ```json
 resp
 [
