@@ -3,20 +3,20 @@ omnicuris  ecommerce assignment
 
 JAVA Spring Boot, Maven ,Hibernate, JPA
 DataBase-MYSQL
-1 ---> Pull code 
-2 ---> Import in eclipse , Maven Update
-3 ---> change db details in application.properties file (currently username->root, Pass-srivastav, Schema - ecomm)
-4 ---> create a schema in mysql ( can use Mysql Workbench) with name ecomm
-5 ---> no need to create tables, it will be created automatically with models , 
-6 ---> default some products are added in products table using CommandLineRunner (in Main)
+- Pull code 
+- Import in eclipse , Maven Update
+- change db details in application.properties file (currently username->root, Pass-srivastav, Schema - ecomm)
+- create a schema in mysql ( can use Mysql Workbench) with name ecomm
+- no need to create tables, it will be created automatically with models , 
+- default some products are added in products table using CommandLineRunner (in Main)
 
 
 APIS
-1 ---->  GET All products in DB
-GET :http://localhost:8085/products/all
-resp : 
-```json
+1 GET All products in DB
+- GET :http://localhost:8085/products/all
 
+```json
+resp : 
 [
     {
         "id": 1,
