@@ -46,9 +46,10 @@ resp :
 ]
 
 ```
-===============================================================================================================================
 2 ----> Order a Product 
+
 POST http://localhost:8085/createorder?username=hello
+
 POST BODy : 
 ```json
 	[ 
@@ -92,7 +93,9 @@ POST BODy :
 ```
 ===============================================================================================================================
 3 ----> get successfully odered products on user wise
+
 GET : http://localhost:8085/getallorders?username=hello
+```json
 [
     {
         "id": 1,
@@ -108,9 +111,12 @@ GET : http://localhost:8085/getallorders?username=hello
         ]
     }
 ]
+```
 ===============================================================================================================================
 4 -----> Add new Products
+
 POST : http://localhost:8085/product/add
+```json
 BODY :
 [
 	{
@@ -126,9 +132,11 @@ resp :
         "quantity": 100
     }
 ]
+```
 ===============================================================================================================================
 5 -----> Update a product already in db (Quantity will be added to currently available quantity & Name will be updated with new)
 POST http://localhost:8085/product/update/1
+```json
 BODY :
  {
         "name": "new1",
@@ -140,9 +148,11 @@ resp :
     "name": "new1",
     "quantity": 600
 }
+```
 ===============================================================================================================================
  6 --> Delete a product in product table
  DELETE http://localhost:8085/product/delete/1
+ ```json
  resp :
 {
     "stat":"ok",
@@ -152,9 +162,11 @@ resp :
     "msg": "Product not found to delete",
     "stat": "fail"
 }
+```
 =================================================================================================================================
 7 ----> Get all Orders of all Users (each order separetly)
 GET http://localhost:8085/orders/all
+```json
 resp
 [
     {
@@ -223,4 +235,5 @@ resp
         ]
     }
 ]
+```
 ===========================================================================================================
