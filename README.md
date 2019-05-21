@@ -1,4 +1,4 @@
-# omnicuris---ecommerce-assignment
+# omnicuris-ecommerce-assignment
 omnicuris  ecommerce assignment
 
 JAVA Spring Boot, Maven ,Hibernate, JPA
@@ -46,6 +46,7 @@ resp :
 ]
 
 ```
+* * *
 **Order a Product**
 - POST http://localhost:8085/createorder?username=hello
 ```json
