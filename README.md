@@ -15,11 +15,42 @@ APIS
 1 ---->  GET All products in DB
 GET :http://localhost:8085/products/all
 resp : 
-[{"id":1,"name":"product 1","quantity":500},{"id":2,"name":"product 2","quantity":500},{"id":3,"name":"product 3","quantity":100},{"id":4,"name":"product 4","quantity":0},{"id":5,"name":"product 5","quantity":5}]
+```json
+
+[
+    {
+        "id": 1,
+        "name": "product 1",
+        "quantity": 500
+    },
+    {
+        "id": 2,
+        "name": "product 2",
+        "quantity": 500
+    },
+    {
+        "id": 3,
+        "name": "product 3",
+        "quantity": 75
+    },
+    {
+        "id": 4,
+        "name": "product 4",
+        "quantity": 0
+    },
+    {
+        "id": 5,
+        "name": "product 5",
+        "quantity": 5
+    }
+]
+
+```
 ===============================================================================================================================
 2 ----> Order a Product 
 POST http://localhost:8085/createorder?username=hello
 POST BODy : 
+```json
 	[ 
 		{
 			"productid":4565,
@@ -58,7 +89,7 @@ POST BODy :
         ]
     }
 }
-
+```
 ===============================================================================================================================
 3 ----> get successfully odered products on user wise
 GET : http://localhost:8085/getallorders?username=hello
